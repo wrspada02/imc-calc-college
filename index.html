@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula com a professora Ana fazendo primeiro teste do segundo semestre :P">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main class="content__container">
+        <img src="./img/ex4_2.jpg" alt="">
+        <section class="content__container--user-handle">
+            <form class="content__container--form" id="imc-form">
+                <legend>Programa Cálculo do Peso Ideal</legend>
+    
+                <label for="student-name">
+                    <span>Nome do Aluno: </span>
+                    <input type="text" name="studentName" id="studentName" placeholder="Adicione o nome do aluno...">
+                </label>
+    
+                <div class="content__container--form--sex">
+                    <label for="male">
+                        <input type="radio" name="sex" value="male" id="male">
+                        <span>Masculino</span>
+                    </label>
+                    <label for="female">
+                        <input type="radio" name="sex" value="female" id="female">
+                        <span>Feminino</span>
+                    </label>
+                </div>
+                
+                <label for="weight">
+                    <span>Peso:</span>
+                    <input type="text" name="weight" id="weight" placeholder="Adicione o peso do aluno..." id="weight">
+                </label>
+    
+                <label for="height">
+                    <span>Altura:</span>
+                    <input type="text" name="height" id="height" placeholder="Adicione a altura do aluno..." id="height">
+                </label>
+    
+                <footer class="content__container--form--footer">
+                    <button type="button" id="calc-button">Calcular Peso Ideal</button>
+                    <button type="reset">Limpar Campos</button>
+                </footer>
+            </form>
+    
+            <section>
+                <h2 id="result"></h2>
+            </section>
+        </section>
+    </main>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
